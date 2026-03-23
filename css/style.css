@@ -248,6 +248,15 @@ section {
     z-index: 500;
     border-bottom: 1px solid rgb(195, 195, 195);
 }
+.card section.intro3 {
+    background: url(../images/assalamualaikum-3.png), linear-gradient(to right, #F8F4FF, #f9fcff, #F8F4FF);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    z-index: 500;
+    border-bottom: 1px solid rgb(195, 195, 195);
+}
 
 .card section.intro .content {
     display: block;
