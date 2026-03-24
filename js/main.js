@@ -99,9 +99,9 @@ document.addEventListener("DOMContentLoaded", () => {
   ======================================================= */
 const event = {
     title: "Wedding Ceremony of Mai Anh and Hai",
-    startDate: "20260425T235959Z", // YYYYMMDDTHHmmssZ (UTC)
-    endDate: "20260425T235959Z",
-    location: "Cho Buom, Yet Kieu, Hai Phong city, Vietnam",
+    startDate: "20260429T175959Z", // YYYYMMDDTHHmmssZ (UTC)
+    endDate: "20260429T215959Z",
+    location: "68-76 Đ. Tản Đà, Phường 11, Quận 5, Hồ Chí Minh 700000, Vietnam",
     description: "May God bless this couple and all the attendees who've made the time to come",
 };
 
@@ -169,16 +169,16 @@ function addAppleCalendar() {
  *  Location for Google and Waze
   ======================================================= */
 function openGoogleMaps() {
-    const latitude =20.873105700045222;  // Example latitude
-    const longitude = 106.26465657582834;  // Example longitude
+    const latitude =10.752888017521256;  // Example latitude
+    const longitude = 106.66470487190207;  // Example longitude
     const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}&travelmode=driving`;
 
     window.open(googleMapsUrl, "_blank");  // Open in a new tab
 }
 
 function openAppleMaps() {
-    const latitude = 20.873105700045222;   // Example latitude
-    const longitude = 106.26465657582834;  // Example longitude
+    const latitude = 10.752888017521256;   // Example latitude
+    const longitude = 106.66470487190207;  // Example longitude
 
     // Apple Maps directions URL
     const appleMapsUrl = `https://maps.apple.com/?daddr=${latitude},${longitude}&dirflg=d`;
