@@ -275,6 +275,9 @@ section {
     justify-content: center;
     z-index: 1;
     border-bottom: 1px solid rgb(195, 195, 195);
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
 }
 
 /* Overlay if text is hard to read on the image */
