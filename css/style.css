@@ -266,6 +266,8 @@ section {
     position: relative;
     min-height: 100vh;
     width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;                    /* ← Important */
     background: 
         url(../images/assalamualaikum-3.png) center center / cover no-repeat,
         linear-gradient(to right, #F8F4FF, #f9fcff, #F8F4FF);
@@ -275,8 +277,6 @@ section {
     justify-content: center;
     z-index: 1;
     border-bottom: 1px solid rgb(195, 195, 195);
-    margin: 0 !important;
-    padding: 0 !important;
     overflow: hidden;
 }
 
@@ -366,7 +366,6 @@ section {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 50px 0px;
     background: linear-gradient(to right, #F8F4FF, #f9fcff, #F8F4FF);
     min-height: 100vh;
 }
