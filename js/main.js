@@ -93,6 +93,32 @@ document.addEventListener("DOMContentLoaded", () => {
     setupCountdown(".campaign-0", weddingEndMillis);
 });
 
+// ★★★ FORCE AUDIO LOOP ★★★
+const audioPlayer = document.getElementById("audio-player");
+if (audioPlayer) {
+    audioPlayer.loop = true;  // Force loop property
+    
+    // Backup: restart on 'ended' event
+    audioPlayer.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    });
+}
+document.addEventListener("DOMContentLoaded", () => {
+    // Force loop on audio element
+    const audioPlayer = document.getElementById("audio-player");
+    if (audioPlayer) {
+        audioPlayer.loop = true;
+        audioPlayer.addEventListener('ended', function() {
+            this.currentTime = 0;
+            this.play().catch(e => console.log('Loop restart failed:', e));
+        });
+    }
+    
+    // Your existing countdown code...
+    const weddingEndMillis = new Date("2026-04-28T23:59:59Z").getTime();
+    setupCountdown(".campaign-0", weddingEndMillis);
+});
 /** =====================================================
  *  Add to Calendar
   ======================================================= */
