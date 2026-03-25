@@ -41,10 +41,7 @@
         </div>
     </div>
     <div class="card">
-        <audio id="audio-player" controls autoplay loop>
-                <source type="audio/mp3"
-                    src="./music/Beautiful in White x Canon in D (Piano Cover by Riyandi Kusuma).mp3">
-            </audio>
+        
         <div class="petal-container"></div>
         <!-- Intro Section -->
         <section class="intro">
@@ -292,6 +289,7 @@
             <h1>Play</h1>
             <p>Beautiful in White x Canon in D</p>
             <p>(Piano Cover by Riyandi Kusuma)</p>
+        
             <audio id="audio-player" controls autoplay loop>
                 <source type="audio/mp3"
                     src="./music/Beautiful in White x Canon in D (Piano Cover by Riyandi Kusuma).mp3">
@@ -408,7 +406,7 @@
     <!-- <script src="./js/main.js"></script> -->
 
     <!-- ★★★ FIX MUSIC PAUSE WHEN TAB HIDDEN / PHONE SWITCHED ★★★ -->
-    <!-- <script>
+    <script>
         const audio = document.getElementById('audio-player');
         
         if (audio) {
@@ -437,7 +435,7 @@
                 audio.pause();
             });
         }
-    </script> -->
+    </script>
                 
     <!-- <script>
         // Location button - opens Google Maps in the SAME tab (no blank tab)
